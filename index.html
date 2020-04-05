@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html><head>
+  <title>WebGL Water</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <script src="OES_texture_float_linear-polyfill.js"></script>
+  <script src="dat.gui.min.js"></script>
+  <script src="lightgl.js"></script>
+  <script src="cubemap.js"></script>
+  <script src="renderer.js"></script>
+  <script src="water.js"></script>
+  <script src="main.js"></script>
+  <style type="text/css">
+    body { font: 13px/140% Arial, sans-serif; background: black; color: white; overflow: hidden; }
+    a { color: inherit; cursor: pointer; }
+    img { display: none; }
+    ul { padding: 0 0 0 20px; }
+    h1 { font: bold italic 30px/30px Georgia; text-align: center; }
+    h2 { font: bold italic 17px/17px Georgia; padding-top: 10px; }
+    small { display: block; font-size: 11px; line-height: 15px; }
+    canvas { position: absolute; top: 0; left: 0;}
+    #help { position: absolute; top: 50px; right: 0; bottom: 0; width: 280px; padding-right: 20px; z-index: 100; }
+    #loading { position: absolute; left: 0; top: 50%; right: 300px; text-align: center; margin-top: -8px; }
+  </style>
+</head><body>
+  <div id="loading">Loading...</div>
+  <div id="help">
+    <h1>WebGL Water</h1>
+    <p>An experiment heavily based on code by <a href="http://madebyevan.com/">Evan Wallace</a></p>
+    <h2>Interactions:</h2>
+    <ul>
+      <li>Draw on the water to make ripples</li>
+      <li>Drag the background to rotate the camera</li>
+      <li>Press SPACEBAR to pause and unpause</li>
+      <li>Drag the sphere to move it around</li>
+      <li>Press the L key to set the light direction</li>
+      <li>Press the G key to toggle gravity</li>
+      <li>Mouse wheel forward and backward to control zoom</li>
+    </ul>
+  </div>
+  <img id="tiles" src="tile.jpg">
+  <img id="xneg" src="nx.jpg">
+  <img id="xpos" src="px.jpg">
+  <img id="ypos" src="py.jpg">
+  <img id="zneg" src="nz.jpg">
+  <img id="zpos" src="pz.jpg">
+</body></html>
