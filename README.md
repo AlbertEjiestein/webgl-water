@@ -1,5 +1,7 @@
 # WebGL Water Demo
 
+![webgl-water.png](https://i.loli.net/2020/04/05/ucNHVhDy6qSUdox.png)
+
 ## 项目说明:
 
 Demo基于Evan Wallace项目，地址：http://madebyevan.com/webgl-water/
